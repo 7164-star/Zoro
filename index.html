@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,104 +7,154 @@
 <title>Stock Market</title>
 
 <style>
-*{margin:0;padding:0;box-sizing:border-box}
-
-body{
-  font-family:Arial,sans-serif;
-  background:#070d20;
-  color:white;
-  padding:25px 15px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.container{
-  max-width:480px;
-  margin:auto;
-  padding:30px 20px;
-  text-align:center;
-  background:linear-gradient(160deg,#101d3a,#080d20);
-  border:1px solid #263858;
-  border-radius:24px;
+body {
+  background: #080e25;
+  color: white;
+  font-family: Arial, sans-serif;
+  padding: 15px;
 }
 
-.top{
-  font-size:13px;
-  letter-spacing:2px;
-  line-height:1.7;
-  font-weight:bold;
-  color:#c5d2e9;
-
-
-.tag{
-  display:inline-block;
-  background:#392b13;
-  color:#ffca3d;
-  border:1px solid #c89524;
-  border-radius:30px;
-  padding:11px 17px;
-  font-weight:bold;
-  font-size:13px;
-  margin:12px 0 18px;
+.container {
+  max-width: 480px;
+  min-height: 100vh;
+  margin: auto;
+  padding: 65px 24px 30px;
+  text-align: center;
+  background: linear-gradient(155deg,#101a38,#080e22);
+  border: 1px solid #263452;
 }
 
-.sub{
-  color:#49b9ff;
-  font-weight:bold;
-  font-size:14px;
-  margin-bottom:17px;
+/* TOP BADGE */
+.tag {
+  display: block;
+  padding: 17px 10px;
+  border: 2px solid #a77c27;
+  border-radius: 40px;
+  background: #392b18;
+  color: #ffc63d;
+  font-size: 17px;
+  font-weight: bold;
 }
 
-h1{
-  font-size:32px;
-  line-height:1.3;
+.community {
+  margin: 43px 0;
+  color: #54bfff;
+  font-size: 19px;
 }
 
-h1 span{color:#ffbd27}
-
-.desc{
-  color:#c6d2e5;
-  line-height:1.8;
-  font-size:15px;
-  margin:22px 0 28px;
+/* MAIN HEADING */
+h1 {
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 1.5;
 }
 
-.join{
-  display:block;
-  text-decoration:none;
-  color:white;
-  background:linear-gradient(100deg,#0876f9,#0648d9);
-  padding:19px 12px;
-  border-radius:16px;
-  font-weight:bold;
-  font-size:19px;
-  box-shadow:0 8px 25px #0065ff40;
+h1 span {
+  display: block;
+  color: #ffc63d;
+  white-space: nowrap;
 }
 
-.join:hover{transform:scale(1.02)}
-
-.points{
-  color:#d9e3f2;
-  line-height:2.2;
-  font-size:14px;
-  margin:23px 0;
+/* DESCRIPTION */
+.description {
+  margin: 55px 0 65px;
+  color: #c4cde0;
+  font-size: 19px;
+  line-height: 2;
 }
 
-.disclaimer{
-  border-top:1px solid #2b3954;
-  padding-top:17px;
-  color:#91a0b8;
-  font-size:11px;
-  line-height:1.7;
+/* TELEGRAM BUTTON */
+.join {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  min-height: 105px;
+  padding: 15px;
+  border-radius: 25px;
+  background: linear-gradient(105deg,#087bff,#0648df);
+  color: white;
+  text-decoration: none;
+  font-size: 21px;
+  font-weight: bold;
+  box-shadow: 0 10px 30px #0064ff35;
 }
 
-.footer{
-  font-size:12px;
-  color:#8295b7;
-  margin-top:17px;
+.join:hover {
+  filter: brightness(1.1);
 }
 
-@media(max-width:380px){
-  h1{font-size:27px}
-  .join{font-size:17px}
+.plane {
+  font-size: 29px;
+}
+
+/* BENEFITS */
+.benefits {
+  display: grid;
+  gap: 24px;
+  margin: 65px 0 60px;
+  color: #d5deef;
+  font-size: 19px;
+}
+
+.benefits div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.benefits span {
+  font-size: 25px;
+}
+
+/* DISCLAIMER */
+hr {
+  border: none;
+  border-top: 1px solid #33405a;
+  margin-bottom: 40px;
+}
+
+.disclaimer {
+  color: #8f9bb2;
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+.footer {
+  margin-top: 55px;
+  color: #7887a5;
+  font-size: 13px;
+}
+
+/* MOBILE */
+@media(max-width:380px) {
+  .container {
+    padding: 40px 16px 25px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  .join {
+    font-size: 17px;
+  }
+
+  .description {
+    font-size: 15px;
+    margin: 40px 0;
+  }
+
+  .benefits {
+    font-size: 15px;
+  }
 }
 </style>
 </head>
@@ -112,40 +163,55 @@ h1 span{color:#ffbd27}
 
 <div class="container">
 
-  <div class="top">
-    RESEARCH & MARKET EDUCATION<br>
-    TRADING COMMUNITY
-  </div>
   <div class="tag">
-    ✓ MARKET EDUCATION & ANALYSIS
+    ✓ MARKET EDUCATION &amp; ANALYSIS
   </div>
 
-  <div class="sub">
+  <div class="community">
     STOCK MARKET LEARNING COMMUNITY
   </div>
 
   <h1>
-    LEARN & GROW WITH<br>
+    LEARN &amp; GROW WITH
     <span>STOCK MARKET 📊</span>
   </h1>
 
-  <p class="desc">
+  <div class="description">
     Daily Market Analysis • Trading Education<br>
     Technical Analysis • Learning Modules<br>
-    Smart & Ethical Trading Knowledge
-  </p>
+    Smart &amp; Ethical Trading Knowledge
+  </div>
 
   <a class="join"
      href="https://t.me/+hM3g5gPGXAhiNjFl"
-     target="_blank">
-     ✈️ Join Telegram Channel — FREE
+     target="_blank"
+     rel="noopener noreferrer">
+
+    <span class="plane">✈️</span>
+    <span>Join Telegram Channel — FREE</span>
+
   </a>
 
-  <div class="points">
-    🔒 Free Educational Content<br>
-    📈 Daily Market Learning & Updates<br>
-    👥 Join Our Growing Community
+  <div class="benefits">
+
+    <div>
+      <span>🔒</span>
+      Free Educational Content
+    </div>
+
+    <div>
+      <span>📈</span>
+      Daily Market Learning &amp; Updates
+    </div>
+
+    <div>
+      <span>👥</span>
+      Join Our Growing Community
+    </div>
+
   </div>
+
+  <hr>
 
   <div class="disclaimer">
     DISCLAIMER: This channel is for educational
